@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Pase Diario - BlackFit Gym</title>
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/form.css">
+</head>
+<body>
+
+    <!-- Encabezado con logo y barra de navegación -->
+    <header>
+        <div>
+            <img src="../assets/images/blackfitt.png" alt="BlackFit Logo" width="50" height="50">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="../pages/membreship.html">Membresías</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal de compra -->
+    <main>
+        <section>
+            <h1>Comprar Pase Diario</h1>
+            <form action="submit.html" method="post">
+                <label for="name">Nombre del Cliente:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="payment">Medio de Pago:</label>
+                <select id="payment" name="payment" required>
+                    <option value="credit">Tarjeta de Crédito</option>
+                    <option value="debit">Tarjeta de Débito</option>
+                    <option value="cash">Efectivo</option>
+                </select>
+
+                <label for="products">Producto:</label>
+                <input type="text" id="products" name="products" value="Pase Diario - $2500" readonly>
+
+                <button type="submit">Confirmar Compra</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 BlackFit. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
